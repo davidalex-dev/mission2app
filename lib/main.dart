@@ -13,7 +13,11 @@ class MissionOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: HomePage()
+        initialRoute: '/',
+        routes: {
+          '/': (context) => HomePage(),
+          BookingForm.routeName: (context) => BookingForm()
+        }
     );
   }
 }

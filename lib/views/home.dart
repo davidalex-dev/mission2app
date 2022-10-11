@@ -172,7 +172,9 @@ class _HomePageState extends State<HomePage>{
 
                           Align(alignment: Alignment.bottomRight,
                               child: ElevatedButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.pushNamed(context, BookingForm.routeName);
+                                },
                                   style: ElevatedButton.styleFrom(
                                     primary: Colors.white,
                                     onPrimary: Colors.black
